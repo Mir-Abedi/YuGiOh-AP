@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.graphics.MainMenuController">
+   <right>
+      <VBox prefHeight="570.0" prefWidth="90.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="gameMenu" fitHeight="60.0" fitWidth="90.0" onMouseClicked="#goToGameMenu" onMouseEntered="#changeGameMenu" onMouseExited="#changeGameMenu" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="profileMenu" fitHeight="60.0" fitWidth="90.0" onMouseClicked="#goToProfileMenu" onMouseEntered="#changeProfileMenu" onMouseExited="#changeProfileMenu" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="scoreBoard" fitHeight="60.0" fitWidth="90.0" onMouseClicked="#goToScoreboard" onMouseEntered="#changeScoreboard" onMouseExited="#changeScoreboard" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="deckMenu" fitHeight="60.0" fitWidth="90.0" onMouseClicked="#goToDeckMenu" onMouseEntered="#changeDeckMenu" onMouseExited="#changeDeckMenu" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="shop" fitHeight="60.0" fitWidth="90.0" onMouseClicked="#goToShop" onMouseEntered="#changeShop" onMouseExited="#changeShop" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <VBox prefHeight="30.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="780.0" style="-fx-background-radius: 20;">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                    <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#goToSetting" text="Setting" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+               <VBox.margin>
+                  <Insets left="10.0" top="4.0" />
+               </VBox.margin>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="babeFace" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Title" alignment="CENTER" contentDisplay="CENTER" prefHeight="91.0" prefWidth="610.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fx:id="imageOfMenu" fitHeight="400.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="15.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </center>
+    <stylesheets>
+        <URL value="@StyleSheets/WelcomeMenu.css" />
+    </stylesheets>
+</BorderPane>

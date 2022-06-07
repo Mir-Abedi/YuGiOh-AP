@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.graphics.deckmenu.AllDecksMenu">
+    <center>
+        <ScrollPane fx:id="cardsPlace" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="380.0" style="-fx-background-color: transparent; -fx-border-radius: 10; -fx-border-color: #000000;">
+            <content>
+                <HBox fx:id="choiceBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="380.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding></HBox>
+            </content>
+            <BorderPane.margin>
+                <Insets bottom="5.0" right="5.0" top="20.0" />
+            </BorderPane.margin>
+        </ScrollPane>
+    </center>
+    <top>
+        <VBox maxHeight="-Infinity" prefHeight="50.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="searchField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" promptText="Search..." style="-fx-background-color: Transparent; -fx-border-color: #4b4b4b#4b4b4b; -fx-border-radius: 10;">
+                    <VBox.margin>
+                        <Insets top="40.0" />
+                    </VBox.margin>
+                </TextField>
+            </children>
+            <BorderPane.margin>
+                <Insets left="175.0" />
+            </BorderPane.margin>
+        </VBox>
+    </top>
+    <right>
+        <VBox fx:id="decisionBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="135.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="40.0" top="120.0" />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+   <bottom>
+      <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="90.0" prefWidth="350.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-style: dotted dashed; -fx-border-radius: 20;" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+         <content>
+            <HBox fx:id="previewBox" prefHeight="70.0" prefWidth="200.0" />
+         </content>
+         <BorderPane.margin>
+            <Insets bottom="5.0" top="3.0" />
+         </BorderPane.margin>
+      </ScrollPane>
+   </bottom>
+   <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="135.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="40.0" top="120.0" />
+         </BorderPane.margin>
+         <children>
+            <ImageView fx:id="lightBulb" fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="17.5" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="135.0" text="Create Deck...">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="deckNameField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="120.0" promptText="Your Deck Name?" style="-fx-background-color: transparent; -fx-border-color: #523333; -fx-border-radius: 8;" wrapText="true">
+               <VBox.margin>
+                  <Insets left="7.5" top="10.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+            <Button fx:id="createDeck" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-border-radius: 20; -fx-border-color: #523333;" text="Create!">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="37.5" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

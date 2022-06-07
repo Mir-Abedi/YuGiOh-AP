@@ -1,0 +1,11 @@
+package view.responses;
+
+public enum ThreeRoundGameResponses {
+    INVALID_COMMAND,
+    CARD_WITH_THIS_NAME_DOES_NOT_EXIST_IN_MAIN_DECK,
+    CARD_WITH_THIS_NAME_DOES_NOT_EXIST_IN_SIDE_DECK,
+    YOU_DONT_HAVE_DECK_WITH_THIS_NAME,
+    CHOSE_A_VALID_DECK,
+
+
+}

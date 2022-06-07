@@ -1,0 +1,4 @@
+.label * {
+    -fx-font: 15px Chalkboard;
+    -fx-text-fill: #000000;
+}

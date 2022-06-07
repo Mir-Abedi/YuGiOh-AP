@@ -1,0 +1,47 @@
+.button {
+    -fx-background-color: Transparent;
+    -fx-background-radius: 10;
+
+}
+
+
+.text-field {
+    -fx-background-radius: 10;
+    -fx-background-color: Transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-border-color: #3b3b3b;
+    -fx-font: 13px Chalkboard;
+}
+
+.text-area {
+    -fx-background-radius: 10;
+    -fx-background-color: Transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-border-color: #3b3b3b;
+    -fx-font: 13px Chalkboard;
+}
+
+
+.menuBar {
+    -fx-background-radius: 7;
+    -fx-font: 15px Chalkboard;
+}
+
+.label * {
+    -fx-font: 20px Chalkboard;
+}
+
+
+.menu * {
+    -fx-font: 15px Chalkboard;
+}
+
+
+.menu-item {
+    -fx-font: 10px Chalkboard;
+}
+

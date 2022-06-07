@@ -1,0 +1,23 @@
+.button {
+    -fx-background-color: Transparent;
+    -fx-background-radius: 10;
+    -fx-border-color: #000000;
+
+    -fx-text-fill: #6e6e6f;
+    -fx-border-radius: 10;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-font: Bold 12px Chalkboard;
+
+}
+.button :hover{
+    -fx-background-color: black;
+    -fx-background-radius: 10;
+    -fx-border-color: #ffff;
+
+    -fx-text-fill: white;
+    -fx-border-radius: 10;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-font: Bold 12px Chalkboard;
+}

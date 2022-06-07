@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-radius: 22.5; -fx-border-radius: 20; -fx-border-color: #000000; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.graphics.SettingController">
+   <children>
+      <Label alignment="CENTER" layoutX="100.0" layoutY="64.0" prefHeight="30.0" prefWidth="200.0" text="Settings">
+         <font>
+            <Font name="Chalkduster" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="25.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" style="-fx-background-radius: 20; -fx-background-color: #ff0000;" text="X">
+         <font>
+            <Font name="Chalkduster" size="10.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="204.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="100.0" text="Volume">
+         <font>
+            <Font name="Chalkduster" size="20.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="100.0" text="SFX ">
+         <font>
+            <Font name="Chalkduster" size="20.0" />
+         </font></Label>
+      <Button fx:id="importExport" alignment="CENTER" layoutX="75.0" layoutY="470.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-radius: 20; -fx-border-width: 1.5;" text="Import/Export">
+         <font>
+            <Font name="Chalkduster" size="13.0" />
+         </font></Button>
+      <Slider fx:id="sfxSlider" layoutX="171.0" layoutY="292.0" majorTickUnit="0.1" max="1.0" minorTickCount="2" prefHeight="16.0" prefWidth="190.0" showTickMarks="true">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.7960526347160339" green="0.10589465498924255" blue="0.014741715043783188" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Slider>
+      <Slider fx:id="volumeSlider" layoutX="171.0" layoutY="220.0" majorTickUnit="0.1" max="1.0" minorTickCount="2" prefHeight="16.0" prefWidth="190.0" showTickMarks="true">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.7960526347160339" green="0.10589465498924255" blue="0.014741715043783188" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Slider>
+      <ToggleButton fx:id="muteToggle" layoutX="150.0" layoutY="359.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-radius: 20;" text="Mute">
+         <font>
+            <Font name="Chalkduster" size="13.0" />
+         </font></ToggleButton>
+   </children>
+</AnchorPane>

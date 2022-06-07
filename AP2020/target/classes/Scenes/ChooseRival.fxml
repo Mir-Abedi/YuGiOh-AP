@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.graphics.duelgraphics.ChooseRival">
+   <Pane layoutY="1.0" prefHeight="400.0" prefWidth="340.0" style="-fx-background-color: white;">
+      <VBox fx:id="searchBox" layoutX="110.0" layoutY="13.0" prefHeight="28.0" prefWidth="118.0">
+         <TextField id="searchbar" fx:id="profileName" alignment="CENTER" onKeyReleased="#getInput" promptText="Search..." style="-fx-background-radius: 11; -fx-cursor: hand; -fx-font-family: chalkboard;" />
+      </VBox>
+      <Label fx:id="stageCounter" alignment="CENTER" prefHeight="30.0" prefWidth="50.0" text="Label" textFill="WHITE" />
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="84.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" scaleZ="-1.0">
+         <Image url="@Images/ninja.png" />
+      </ImageView>
+      <Button layoutX="11.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#goToDuelMenu" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50; -fx-background-color: black; -fx-cursor: hand;" text="back" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Chalkboard" size="13.0" />
+         </font>
+      </Button>
+   </Pane>
+</AnchorPane>

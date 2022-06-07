@@ -1,0 +1,12 @@
+.label * {
+    -fx-font: 15px Chalkboard;
+    -fx-text-fill: #000000;
+}
+
+.radio-button * {
+    -fx-font: 15px Chalkboard;
+}
+
+.text-field * {
+    -fx-font: 15px Chalkboard;
+}

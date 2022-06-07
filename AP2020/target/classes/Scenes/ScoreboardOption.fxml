@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="260.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.graphics.ScoreboardOptionCreator">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-radius: 10;">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+         <children>
+            <Circle fx:id="profileCircle" fill="#ffffff00" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets left="5.0" top="1.0" />
+               </HBox.margin>
+            </Circle>
+            <Label fx:id="username" prefHeight="17.0" prefWidth="70.0" text="Sia">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Chalkboard" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="34.0" text="Score:">
+               <font>
+                  <Font name="Chalkboard" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="score" alignment="CENTER" prefHeight="18.0" prefWidth="70.0" text="000">
+               <font>
+                  <Font name="Chalkduster" size="12.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="0.7" specularConstant="0.42" specularExponent="0.0" surfaceScale="10.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label fx:id="rank" alignment="CENTER" prefHeight="18.0" prefWidth="38.0" text="#0">
+               <font>
+                  <Font name="Chalkboard" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</HBox>

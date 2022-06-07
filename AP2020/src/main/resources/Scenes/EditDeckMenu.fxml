@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.graphics.deckmenu.EditDeckMenu">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="125.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="185.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-radius: 10;" vbarPolicy="NEVER">
+         <content>
+            <HBox fx:id="sideChoiceBox" prefHeight="100.0" prefWidth="397.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="125.0" layoutY="5.0" pannable="true" prefHeight="185.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-radius: 10;" vbarPolicy="NEVER">
+         <content>
+            <HBox fx:id="mainChoiceBox" prefHeight="100.0" prefWidth="399.0" />
+         </content>
+      </ScrollPane>
+      <VBox fx:id="mainDeckOptionBar" layoutX="535.0" layoutY="5.0" prefHeight="185.0" prefWidth="100.0" style="-fx-border-color: #000000; -fx-border-radius: 10; -fx-border-style: dashed solid dashed;" />
+      <Label fx:id="nameLabel" alignment="CENTER" layoutY="200.0" prefHeight="20.0" prefWidth="125.0" />
+      <Label alignment="CENTER" layoutY="298.0" prefHeight="60.0" prefWidth="125.0" text="Side Deck" />
+      <Label alignment="CENTER" layoutY="80.0" prefHeight="60.0" prefWidth="125.0" text="Main Deck" />
+      <TextField fx:id="searchField" layoutX="225.0" layoutY="197.0" prefHeight="25.0" prefWidth="200.0" promptText="Search..." style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-radius: 20;" />
+      <ToggleButton fx:id="sideToggle" layoutX="430.0" layoutY="197.5" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" style="-fx-border-radius: 20; -fx-border-color: #000000; -fx-background-color: transparent;" text="Side" />
+      <ToggleButton fx:id="mainToggle" layoutX="170.0" layoutY="198.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" style="-fx-border-radius: 20; -fx-border-color: #000000; -fx-background-color: transparent;" text="Main" />
+      <VBox fx:id="sideDeckOptionBar" layoutX="535.0" layoutY="230.0" prefHeight="185.0" prefWidth="100.0" style="-fx-border-color: #000000; -fx-border-radius: 10; -fx-border-style: dashed solid dashed;" />
+   </children>
+</AnchorPane>
